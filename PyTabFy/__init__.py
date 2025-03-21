@@ -18,7 +18,7 @@ from PyTabFy.PyTUtils import validate_obj_type
 #   version_tuple = (1, 2, 3, 'null')  -> v1.2.3
 #   version_tuple = (4, 5, 6, 'beta')  -> v4.5.6 beta
 #   version_tuple = (7, 8, 9, 'alpha') -> v7.8.9 alpha
-version_tuple: Tuple[int, int, int, str] = (1, 0, 0, 'null')
+version_tuple: Tuple[int, int, int, str] = (1, 0, 1, 'null')
 validate_obj_type(
     obj=version_tuple, 
     obj_name='version_tuple', 
