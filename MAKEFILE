@@ -1,0 +1,10 @@
+.PHONY: run-examples, install, install-editable
+
+run-examples:
+	python ./PyTabFy/Examples/examples.py
+
+install:
+	pip install .
+
+install-editable:
+	pip install -e .
