@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=62.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "PyTabFy"
+version = "1.0.0"
+requires-python = ">=3.8"
+dependencies = ["wcwidth", ]
+
+readme = "README.md"
+description = "Builds and Displays Customizable Tables"
+authors = [{ name = "Fabrício dos Santos Moreira", email = "dev.fabriciodossantosmoreira@gmail.com" }]
+
+keywords = ["Python", "Library", "Tables", "Customizable", "ASCII", "Non-ASCII"]
+classifiers = [
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: User Interfaces",
+    "Topic :: Utilities",
+    "Development Status :: 2 - Pre-Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+]
+
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-cov"] 
+
+
+[project.urls]
+repository = "https://github.com/FabricioDosSantosMoreira/PyTabFy"
+
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["*"] 
+exclude = ["Tests*"]  
+
+
+[tool.pytest.ini_options]
+addopts = "-s"
+testpaths = ["Tests/"]
